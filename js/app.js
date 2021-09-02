@@ -20,11 +20,12 @@ for (let i = 0; i < button.length; i++) {
 
             computerChoice();
             console.log(fill);
-        }
 
+        }
     });
 
     function computerChoice() {
+
         let randomNumber = Math.floor(Math.random() * 9);
         console.log(randomNumber);
         if (fill[randomNumber] == "") {
@@ -38,7 +39,6 @@ for (let i = 0; i < button.length; i++) {
                     button[i].innerHTML = "O";
                     break;
                 }
-
             }
         }
     }
