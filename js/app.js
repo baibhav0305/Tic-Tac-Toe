@@ -32,6 +32,7 @@ for (let i = 0; i < button.length; i++) {
             if ((check() == true) && (win == false)) {
                 win = true;
                 console.log("HURRAY !!!!!");
+
                 result.innerHTML = "✨🔥 YOU WON 🔥✨";
                 // return;
             }
@@ -46,8 +47,29 @@ for (let i = 0; i < button.length; i++) {
             if ((check() == true) && (win == false)) {
                 win = true;
                 console.log("Uffffffff !!!!>>>>>");
+
                 result.innerHTML = "😩 COMPUTER WON 😩";
                 // return;
+            }
+
+            let verify = false;
+
+            for (let i = 0; i < fill.length; i++) {
+                if (fill[i] == "") {
+                    verify = true;
+                }
+            }
+            if ((verify == false) && (win == false)) {
+
+                console.log("!!!  DRAW  !!!");
+
+                result.innerHTML = "🙂 DRAW 🙂";
+
+                for (let j = 0; j < button.length; j++) {
+
+                    button[j].style.backgroundColor = "#FFE3E3";
+                    button[j].style.color = "black";
+                }
             }
         }
     });
@@ -101,11 +123,14 @@ for (let i = 0; i < button.length; i++) {
             if ((x === y) && (x === z)) {
                 // console.log("COMPLETED !!!");
                 if (x == "X") {
+
                     button[permutations[i][0]].style.backgroundColor = "#26e974e0";
                     button[permutations[i][1]].style.backgroundColor = "#26e974e0";
                     button[permutations[i][2]].style.backgroundColor = "#26e974e0";
+
                 }
                 else {
+
                     button[permutations[i][0]].style.backgroundColor = "#FF0000";
                     button[permutations[i][1]].style.backgroundColor = "#FF0000";
                     button[permutations[i][2]].style.backgroundColor = "#FF0000";
@@ -121,7 +146,7 @@ for (let i = 0; i < button.length; i++) {
 
 
 
-// 80ED99 -- green
+// 26e974e0 -- green
 // FF0000 -- red
 
 
