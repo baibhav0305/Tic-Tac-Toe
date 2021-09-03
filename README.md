@@ -4,8 +4,8 @@ Simple Tic-Tac-Toe game
 
 - Live URL:
 
-![win](./images/win.png)
-![loss](./images/loss.png)
+<img src="images/win.png" alt="win" height="200"/>
+<img src="images/loss.png" alt="loss" height="200"/>
 
 **Features**
 
