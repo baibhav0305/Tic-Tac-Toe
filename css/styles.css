@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-    
-    /* ###############    TODO     #################*/
-    
-    /* padding: 0; */
-    box-sizing: border-box;
+  margin: 0;
+
+  /* ###############    TODO     #################*/
+
+  /* padding: 0; */
+  box-sizing: border-box;
 }
 
 /* body {
@@ -12,9 +12,10 @@
 } */
 
 .container {
-    height: 100vh;
-    background-color: aquamarine;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

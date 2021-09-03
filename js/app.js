@@ -1,7 +1,14 @@
 
 // open console 🙂
 
-let button = document.querySelectorAll("button");
+let button = document.querySelectorAll(".btn");
+let reset = document.getElementById("reset");
+let result = document.getElementById("result");
+
+reset.addEventListener("click", () => {
+
+    location.reload();
+});
 
 let fill = ["", "", "", "", "", "", "", "", ""];
 console.log(fill.length);
@@ -25,6 +32,7 @@ for (let i = 0; i < button.length; i++) {
             if ((check() == true) && (win == false)) {
                 win = true;
                 console.log("HURRAY !!!!!");
+                result.innerHTML = "!!! YOU WON !!!";
                 // return;
             }
 
@@ -38,6 +46,7 @@ for (let i = 0; i < button.length; i++) {
             if ((check() == true) && (win == false)) {
                 win = true;
                 console.log("Uffffffff !!!!>>>>>");
+                result.innerHTML = "COMPUTER WON";
                 // return;
             }
         }
