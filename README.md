@@ -2,7 +2,7 @@
 
 Simple Tic-Tac-Toe game
 
-- Live URL:
+- Live URL: [Tic-Tac-Toe](https://tic-tac-toe-baibhav0305.vercel.app/)
 
 ![screen-gif](./images/video111.gif)
 
